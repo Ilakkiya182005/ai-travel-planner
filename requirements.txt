@@ -1,0 +1,16 @@
+# Data Processing
+pandas
+numpy
+
+# Vector Search & Embeddings
+faiss-cpu
+sentence-transformers
+torch
+
+# LLM & API
+openai
+python-dotenv
+
+# Utility
+pickle
+tqdm

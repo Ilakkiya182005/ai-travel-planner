@@ -1,0 +1,31 @@
+id,mode,provider,train_name,train_number,source,destination,departure_time,arrival_time,duration,price,class,availability
+TR001,train,IRCTC,Tamil Nadu Express,12621,Chennai,Delhi,2026-05-01T22:00,2026-05-03T06:00,32h,1800,Sleeper,available
+TR002,train,IRCTC,Rajdhani Express,12434,Chennai,Coimbatore,2026-05-01T18:00,2026-05-02T20:00,26h,3200,3AC,available
+TR003,train,IRCTC,Grand Trunk Express,12615,Chennai,Thrichy,2026-05-02T19:15,2026-05-04T06:30,35h,1700,Sleeper,available
+TR004,train,IRCTC,Duronto Express,12269,Chennai,Delhi,2026-05-02T06:40,2026-05-03T10:30,28h,3500,2AC,available
+TR005,train,IRCTC,Tamil Nadu Express,12621,Chennai,Punjab,2026-05-03T22:00,2026-05-05T06:00,32h,1850,Sleeper,available
+TR006,train,IRCTC,Rajdhani Express,12434,Chennai,Delhi,2026-05-03T18:00,2026-05-04T20:00,26h,3300,3AC,available
+TR007,train,IRCTC,Duronto Express,12269,Chennai,Delhi,2026-05-04T06:40,2026-05-05T10:30,28h,3600,2AC,available
+TR008,train,IRCTC,Grand Trunk Express,12615,Chennai,Rajasthan,2026-05-04T19:15,2026-05-06T06:30,35h,1750,Sleeper,available
+TR009,train,IRCTC,Tamil Nadu Express,12621,Chennai,Delhi,2026-05-05T22:00,2026-05-07T06:00,32h,1900,Sleeper,available
+TR010,train,IRCTC,Rajdhani Express,12434,Chennai,Delhi,2026-05-05T18:00,2026-05-06T20:00,26h,3400,3AC,available
+TR011,train,IRCTC,Duronto Express,12269,Chennai,Lucknow,2026-05-06T06:40,2026-05-07T10:30,28h,3550,2AC,available
+TR012,train,IRCTC,Grand Trunk Express,12615,Chennai,Delhi,2026-05-06T19:15,2026-05-08T06:30,35h,1800,Sleeper,available
+TR013,train,IRCTC,Tamil Nadu Express,12621,Chennai,Delhi,2026-05-07T22:00,2026-05-09T06:00,32h,2000,Sleeper,available
+TR014,train,IRCTC,Rajdhani Express,12434,Chennai,Karaikudi,2026-05-07T18:00,2026-05-08T20:00,26h,3500,3AC,available
+TR015,train,IRCTC,Duronto Express,12269,Chennai,Delhi,2026-05-08T06:40,2026-05-09T10:30,28h,3700,2AC,available
+TR001,train,IRCTC,Tamil Nadu Express,12621,Chennai,Delhi,2026-05-01T22:00,2026-05-03T06:00,32h,1800,Sleeper,available
+TR002,train,IRCTC,Rajdhani Express,12434,Chennai,Delhi,2026-05-01T18:00,2026-05-02T20:00,26h,3200,3AC,available
+TR003,train,IRCTC,Grand Trunk Express,12615,Chennai,Andhra Pradesh,2026-05-02T19:15,2026-05-04T06:30,35h,1700,Sleeper,available
+TR004,train,IRCTC,Duronto Express,12269,Chennai,Delhi,2026-05-02T06:40,2026-05-03T10:30,28h,3500,2AC,available
+TR005,train,IRCTC,Tamil Nadu Express,12621,Chennai,Delhi,2026-05-03T22:00,2026-05-05T06:00,32h,1850,Sleeper,available
+TR006,train,IRCTC,Rajdhani Express,12434,Chennai,Telagana,2026-05-03T18:00,2026-05-04T20:00,26h,3300,3AC,available
+TR007,train,IRCTC,Duronto Express,12269,Chennai,Kerala,2026-05-04T06:40,2026-05-05T10:30,28h,3600,2AC,available
+TR008,train,IRCTC,Grand Trunk Express,12615,Chennai,Delhi,2026-05-04T19:15,2026-05-06T06:30,35h,1750,Sleeper,available
+TR009,train,IRCTC,Tamil Nadu Express,12621,Chennai,Dehradun,2026-05-05T22:00,2026-05-07T06:00,32h,1900,Sleeper,available
+TR010,train,IRCTC,Rajdhani Express,12434,Chennai,Bangalore,2026-05-05T18:00,2026-05-06T20:00,26h,3400,3AC,available
+TR011,train,IRCTC,Duronto Express,12269,Chennai,Himachal Pradesh,2026-05-06T06:40,2026-05-07T10:30,28h,3550,2AC,available
+TR012,train,IRCTC,Grand Trunk Express,12615,Chennai,Goa,2026-05-06T19:15,2026-05-08T06:30,35h,1800,Sleeper,available
+TR013,train,IRCTC,Tamil Nadu Express,12621,Chennai,Ladakh,2026-05-07T22:00,2026-05-09T06:00,32h,2000,Sleeper,available
+TR014,train,IRCTC,Rajdhani Express,12434,Chennai,Mysore,2026-05-07T18:00,2026-05-08T20:00,26h,3500,3AC,available
+TR015,train,IRCTC,Duronto Express,12269,Chennai,Hydrebad,2026-05-08T06:40,2026-05-09T10:30,28h,3700,2AC,available

@@ -1,0 +1,51 @@
+id,mode,provider,train_name,train_number,source,destination,departure_time,arrival_time,duration,price,class,availability,,,
+TR001,train,IRCTC,Tamil Nadu Express,12621,Chennai,Delhi,2026-05-01T22:00,2026-05-03T06:00,32h,1800,Sleeper,available,,,
+TR002,train,IRCTC,Rajdhani Express,12434,Chennai,Coimbatore,2026-05-01T18:00,2026-05-02T20:00,26h,3200,3AC,available,,,
+TR003,train,IRCTC,Grand Trunk Express,12615,Chennai,Thrichy,2026-05-02T19:15,2026-05-04T06:30,35h,1700,Sleeper,available,,,
+TR004,train,IRCTC,Duronto Express,12269,Chennai,Delhi,2026-05-02T06:40,2026-05-03T10:30,28h,3500,2AC,available,,,
+TR005,train,IRCTC,Tamil Nadu Express,12621,Chennai,Punjab,2026-05-03T22:00,2026-05-05T06:00,32h,1850,Sleeper,available,,,
+TR006,train,IRCTC,Rajdhani Express,12434,Chennai,Delhi,2026-05-03T18:00,2026-05-04T20:00,26h,3300,3AC,available,,,
+TR007,train,IRCTC,Duronto Express,12269,Chennai,Delhi,2026-05-04T06:40,2026-05-05T10:30,28h,3600,2AC,available,,,
+TR008,train,IRCTC,Grand Trunk Express,12615,Chennai,Rajasthan,2026-05-04T19:15,2026-05-06T06:30,35h,1750,Sleeper,available,,,
+TR009,train,IRCTC,Tamil Nadu Express,12621,Chennai,Delhi,2026-05-05T22:00,2026-05-07T06:00,32h,1900,Sleeper,available,,,
+TR010,train,IRCTC,Rajdhani Express,12434,Chennai,Delhi,2026-05-05T18:00,2026-05-06T20:00,26h,3400,3AC,available,,,
+TR011,train,IRCTC,Duronto Express,12269,Chennai,Lucknow,2026-05-06T06:40,2026-05-07T10:30,28h,3550,2AC,available,,,
+TR012,train,IRCTC,Grand Trunk Express,12615,Chennai,Delhi,2026-05-06T19:15,2026-05-08T06:30,35h,1800,Sleeper,available,,,
+TR013,train,IRCTC,Tamil Nadu Express,12621,Chennai,Delhi,2026-05-07T22:00,2026-05-09T06:00,32h,2000,Sleeper,available,,,
+TR014,train,IRCTC,Rajdhani Express,12434,Chennai,Karaikudi,2026-05-07T18:00,2026-05-08T20:00,26h,3500,3AC,available,,,
+TR015,train,IRCTC,Duronto Express,12269,Chennai,Delhi,2026-05-08T06:40,2026-05-09T10:30,28h,3700,2AC,available,,,
+TR001,train,IRCTC,Tamil Nadu Express,12621,Chennai,Delhi,2026-05-01T22:00,2026-05-03T06:00,32h,1800,Sleeper,available,,,
+TR002,train,IRCTC,Rajdhani Express,12434,Chennai,Delhi,2026-05-01T18:00,2026-05-02T20:00,26h,3200,3AC,available,,,
+TR003,train,IRCTC,Grand Trunk Express,12615,Chennai,Andhra Pradesh,2026-05-02T19:15,2026-05-04T06:30,35h,1700,Sleeper,available,,,
+TR004,train,IRCTC,Duronto Express,12269,Chennai,Delhi,2026-05-02T06:40,2026-05-03T10:30,28h,3500,2AC,available,,,
+TR005,train,IRCTC,Tamil Nadu Express,12621,Chennai,Delhi,2026-05-03T22:00,2026-05-05T06:00,32h,1850,Sleeper,available,,,
+TR006,train,IRCTC,Rajdhani Express,12434,Chennai,Telagana,2026-05-03T18:00,2026-05-04T20:00,26h,3300,3AC,available,,,
+TR007,train,IRCTC,Duronto Express,12269,Chennai,Kerala,2026-05-04T06:40,2026-05-05T10:30,28h,3600,2AC,available,,,
+TR008,train,IRCTC,Grand Trunk Express,12615,Chennai,Delhi,2026-05-04T19:15,2026-05-06T06:30,35h,1750,Sleeper,available,,,
+TR009,train,IRCTC,Tamil Nadu Express,12621,Chennai,Dehradun,2026-05-05T22:00,2026-05-07T06:00,32h,1900,Sleeper,available,,,
+TR010,train,IRCTC,Rajdhani Express,12434,Chennai,Bangalore,2026-05-05T18:00,2026-05-06T20:00,26h,3400,3AC,available,,,
+TR011,train,IRCTC,Duronto Express,12269,Chennai,Himachal Pradesh,2026-05-06T06:40,2026-05-07T10:30,28h,3550,2AC,available,,,
+TR012,train,IRCTC,Grand Trunk Express,12615,Chennai,Goa,2026-05-06T19:15,2026-05-08T06:30,35h,1800,Sleeper,available,,,
+TR013,train,IRCTC,Tamil Nadu Express,12621,Chennai,Ladakh,2026-05-07T22:00,2026-05-09T06:00,32h,2000,Sleeper,available,,,
+TR014,train,IRCTC,Rajdhani Express,12434,Chennai,Mysore,2026-05-07T18:00,2026-05-08T20:00,26h,3500,3AC,available,,,
+TR015,train,IRCTC,Duronto Express,12269,Chennai,Hydrebad,2026-05-08T06:40,2026-05-09T10:30,28h,3700,2AC,available,,,
+BS001,bus,RedBus,,,Chennai,Bangalore,2026-05-01T22:30:00+05:30,2026-05-02T05:30:00+05:30,7h,900,,available,AC Sleeper,Koyambedu,Majestic
+BS002,bus,VRL Travels,,,Chennai,Bangalore,2026-05-01T21:00:00+05:30,2026-05-02T06:00:00+05:30,9h,600,,available,Non-AC Seater,Tambaram,Electronic City
+BS003,bus,SRS Travels,,,Chennai,Hyderabad,2026-05-02T20:00:00+05:30,2026-05-03T07:00:00+05:30,11h,1200,,available,AC Seater,Koyambedu,MGBS
+BS004,bus,Orange Travels,,,Chennai,Hyderabad,2026-05-02T22:00:00+05:30,2026-05-03T08:30:00+05:30,10h 30m,1500,,available,AC Sleeper,Guindy,Ameerpet
+BS005,bus,KSRTC,,,Bangalore,Mysore,2026-05-03T08:00:00+05:30,2026-05-03T11:00:00+05:30,3h,500,,available,Volvo AC,Majestic,Mysore Bus Stand
+BS006,bus,APSRTC,,,Hyderabad,Vijayawada,2026-05-03T14:00:00+05:30,2026-05-03T20:00:00+05:30,6h,400,,available,Non-AC Seater,MGBS,Vijayawada Bus Stand
+BS007,bus,TNSTC,,,Chennai,Coimbatore,2026-05-04T21:30:00+05:30,2026-05-05T06:30:00+05:30,9h,700,,available,Non-AC Seater,Koyambedu,Gandhipuram
+BS008,bus,Parveen Travels,,,Chennai,Coimbatore,2026-05-04T22:30:00+05:30,2026-05-05T07:00:00+05:30,8h 30m,1300,,available,AC Sleeper,Tambaram,Gandhipuram
+BS009,bus,VRL Travels,,,Bangalore,Mumbai,2026-05-05T18:00:00+05:30,2026-05-06T09:00:00+05:30,15h,1800,,available,AC Sleeper,Electronic City,Dadar
+BS010,bus,Neeta Travels,,,Mumbai,Pune,2026-05-05T09:00:00+05:30,2026-05-05T12:30:00+05:30,3h 30m,500,,available,AC Seater,Dadar,Swargate
+BS011,bus,RSRTC,,,Jaipur,Delhi,2026-05-06T07:00:00+05:30,2026-05-06T12:00:00+05:30,5h,350,,available,Non-AC Seater,Sindhi Camp,Kashmere Gate
+BS012,bus,UPSRTC,,,Delhi,Agra,2026-05-06T08:00:00+05:30,2026-05-06T12:00:00+05:30,4h,400,,available,AC Seater,Anand Vihar,Agra Bus Stand
+BS013,bus,GSRTC,,,Ahmedabad,Udaipur,2026-05-07T22:00:00+05:30,2026-05-08T06:00:00+05:30,8h,1000,,available,AC Sleeper,Geeta Mandir,Udaipur Bus Stand
+BS014,bus,HRTC,,,Delhi,Shimla,2026-05-07T21:00:00+05:30,2026-05-08T07:00:00+05:30,10h,600,,available,Non-AC Seater,ISBT,Shimla Bus Stand
+BS015,bus,TNSTC,,,Madurai,Chennai,2026-05-08T20:00:00+05:30,2026-05-09T06:00:00+05:30,10h,700,,available,Non-AC Seater,Mattuthavani,Koyambedu
+BS016,bus,KSRTC,,,Bangalore,Goa,2026-05-08T19:00:00+05:30,2026-05-09T07:00:00+05:30,12h,1400,,available,AC Sleeper,Majestic,Panaji
+BS017,bus,APSRTC,,,Hyderabad,Bangalore,2026-05-09T21:00:00+05:30,2026-05-10T07:00:00+05:30,10h,1100,,available,AC Seater,MGBS,Majestic
+BS018,bus,VRL Travels,,,Pune,Bangalore,2026-05-09T18:00:00+05:30,2026-05-10T08:00:00+05:30,14h,1700,,available,AC Sleeper,Swargate,Electronic City
+BS019,bus,RSRTC,,,Jaipur,Udaipur,2026-05-10T08:00:00+05:30,2026-05-10T16:00:00+05:30,8h,500,,available,Non-AC Seater,Sindhi Camp,Udaipur
+BS020,bus,UPSRTC,,,Delhi,Lucknow,2026-05-10T22:00:00+05:30,2026-05-11T08:00:00+05:30,10h,900,,available,AC Seater,Anand Vihar,Lucknow
