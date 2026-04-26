@@ -15,6 +15,6 @@ files = [
 df = pd.concat([pd.read_csv(file) for file in files], ignore_index=True)
 
 # Save as one CSV
-df.to_csv("hotels.csv", index=False)
+df.to_csv("hotels_data.csv", index=False)
 
 print("All files merged successfully into hotels.csv")

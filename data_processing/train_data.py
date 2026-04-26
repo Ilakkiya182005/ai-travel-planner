@@ -15,4 +15,4 @@ with open('train_data.csv', 'w', newline='', encoding='utf-8') as file:
     writer.writeheader()  # Write column names
     writer.writerows(data)  # Write data rows
 
-print("✅ JSON converted to CSV successfully!")
+print("JSON converted to CSV successfully!")
