@@ -1,13 +1,30 @@
 import pandas as pd
 import os
+import faiss
+import pickle
+from sentence_transformers import SentenceTransformer
+
+# Get project root directory
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+VECTOR_STORE_DIR = os.path.join(PROJECT_ROOT, 'embeddings', 'vector_store')
+
+# Load sentence transformer model
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
 
 class HotelRetriever:
-    def __init__(self, file_path='data/hotels_data.csv'):
-        if not os.path.exists(file_path):
-            raise FileNotFoundError(f"Hotel data not found at {file_path}")
-        self.df = pd.read_csv(file_path)
-        self._preprocess()
-
+    def __init__(self):
+        # Load vector store
+        index_path = os.path.join(VECTOR_STORE_DIR, 'hotel_index')
+        metadata_path = os.path.join(VECTOR_STORE_DIR, 'hotel_metadata.pkl')
+        
+        if not os.path.exists(index_path) or not os.path.exists(metadata_path):
+            raise FileNotFoundError("Hotel vector store not found. Please run create_embeddings.py first.")
+        
+        self.index = faiss.read_index(index_path)
+        with open(metadata_path, 'rb') as f:
+            self.df = pickle.load(f)
+    
     def _preprocess(self):
         # Clean the Price column: remove commas and convert to float
         def clean_price(price):
@@ -21,15 +38,35 @@ class HotelRetriever:
 
     def get_best_hotels(self, city, max_price_per_night, top_k=3):
         """
-        Filters hotels by city and budget, then sorts by Rating.
+        Filters hotels by city and budget using vector search, then sorts by Rating.
         """
-        mask = (self.df['place'].str.lower() == city.lower()) & \
-               (self.df['Price_Clean'] <= max_price_per_night)
+        # Create search query
+        query = f"hotels in {city}"
+        query_embedding = model.encode([query])
         
-        filtered_hotels = self.df[mask]
+        # Search in vector store
+        distances, indices = self.index.search(query_embedding, len(self.df))
         
-        # If no hotels found within budget, fallback to the cheapest available in that city
-        if filtered_hotels.empty:
-            filtered_hotels = self.df[self.df['place'].str.lower() == city.lower()]
-            
-        return filtered_hotels.sort_values(by='Rating', ascending=False).head(top_k).to_dict('records')
+        # Get results and filter by city and price
+        results = []
+        for idx in indices[0]:
+            if idx < len(self.df):
+                row = self.df.iloc[idx]
+                # Filter by city and price
+                if (str(row['place']).lower() == city.lower() and 
+                    row.get('Price_Clean', 0) <= max_price_per_night):
+                    results.append(row.to_dict())
+                    if len(results) >= top_k:
+                        break
+        
+        # If no results within budget, get top rated hotels in city
+        if not results:
+            for idx in indices[0]:
+                if idx < len(self.df):
+                    row = self.df.iloc[idx]
+                    if str(row['place']).lower() == city.lower():
+                        results.append(row.to_dict())
+                        if len(results) >= top_k:
+                            break
+        
+        return results
