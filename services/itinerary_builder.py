@@ -1,5 +1,5 @@
 from services.budget_allocator import BudgetAllocator
-from retrievers.flight_retriever import TravelRetriever
+from retrievers.travel_retriever import TravelRetriever
 from retrievers.hotel_retriever import HotelRetriever
 from retrievers.activity_retriever import ActivityRetriever
 from llm.prompt_templates import ITINERARY_PROMPT
