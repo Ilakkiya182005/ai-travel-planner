@@ -9,19 +9,16 @@ import logging
 import sys
 import os
 from typing import Dict, Any, Tuple
-
 # Add project root to path for imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 from services.intent_service import IntentService
 from services.itinerary_builder import ItineraryBuilder
 from llm.llm_client import LLMClient
 from config.settings import OPENAI_API_KEY, DEBUG_MODE
 from backend.errors import ValidationError, ServiceError, handle_error
 
-# ============================================================================
 # LOGGER SETUP
-# ============================================================================
+
 logger = logging.getLogger(__name__)
 logging.basicConfig(
     level=logging.DEBUG if DEBUG_MODE else logging.INFO,
@@ -32,16 +29,14 @@ logging.basicConfig(
     ]
 )
 
-# ============================================================================
 # FLASK APP INITIALIZATION
-# ============================================================================
+
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
 CORS(app)  # Enable CORS for frontend communication
 
-# ============================================================================
 # GLOBAL SERVICE INITIALIZATION
-# ============================================================================
+
 try:
     llm_client = LLMClient(OPENAI_API_KEY)
     intent_service = IntentService(OPENAI_API_KEY)
@@ -51,10 +46,8 @@ except Exception as e:
     logger.error(f"Failed to initialize services: {str(e)}")
     raise
 
-
-# ============================================================================
 # REQUEST VALIDATION HELPERS
-# ============================================================================
+
 def validate_travel_params(params: Dict[str, Any]) -> Tuple[bool, str]:
     """
     Validate travel parameters for completeness and correctness
@@ -95,10 +88,7 @@ def validate_travel_params(params: Dict[str, Any]) -> Tuple[bool, str]:
     
     return True, ""
 
-
-# ============================================================================
 # API ENDPOINTS
-# ============================================================================
 
 @app.route('/api/health', methods=['GET'])
 def health_check():
@@ -312,10 +302,7 @@ def internal_error(error):
     logger.error(f"Internal server error: {str(error)}", exc_info=True)
     return jsonify({'error': 'Internal server error'}), 500
 
-
-# ============================================================================
 # APPLICATION ENTRY POINT
-# ============================================================================
 
 if __name__ == '__main__':
     logger.info("Starting AI Travel Planner Backend API")

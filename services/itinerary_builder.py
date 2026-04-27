@@ -1,5 +1,5 @@
 from services.budget_allocator import BudgetAllocator
-from retrievers.flight_retriever import FlightRetriever
+from retrievers.travel_retriever import TravelRetriever
 from retrievers.hotel_retriever import HotelRetriever
 from retrievers.activity_retriever import ActivityRetriever
 from llm.prompt_templates import ITINERARY_PROMPT
@@ -7,7 +7,7 @@ from llm.prompt_templates import ITINERARY_PROMPT
 class ItineraryBuilder:
     def __init__(self, llm_client):
         self.llm = llm_client
-        self.flight_retriever = FlightRetriever()
+        self.travel_retriever = TravelRetriever()
         self.hotel_retriever = HotelRetriever()
         self.activity_retriever = ActivityRetriever()
 
@@ -23,7 +23,7 @@ class ItineraryBuilder:
         limits = BudgetAllocator.allocate(budget, days)
 
         # 2. Retrieve Logistics (Flights & Hotels)
-        best_flight = self.flight_retriever.get_best_flight(
+        best_travel = self.travel_retriever.get_best_travel(
             source, dest, limits['transport_max']
         )
         
@@ -45,7 +45,7 @@ class ItineraryBuilder:
             "days": days,
             "budget": budget,
             "prefs": preferences,
-            "flights": best_flight[0] if best_flight else "No flights in budget found",
+            "flights": best_travel[0] if best_travel else "No flights in budget found",
             "hotel": best_hotels[0] if best_hotels else "No hotels in budget found",
             "activities": [
                 {"name": a['Place'], "desc": a['Place_desc'], "fee": a['entry_fee']} 

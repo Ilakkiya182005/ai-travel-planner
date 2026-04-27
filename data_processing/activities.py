@@ -16,4 +16,4 @@ df_filtered["entry_fee"] = [random.randint(100, 3000) for _ in range(len(df_filt
 # Save to new file
 df_filtered.to_csv("filtered_tourist_data.csv", index=False)
 
-print("✅ Filtered dataset with entry fees created!")
+print("Filtered dataset with entry fees created!")
